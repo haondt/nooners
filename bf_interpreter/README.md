@@ -9,8 +9,8 @@ cargo run <brainfuck_file>
 ## Example
 
 ```bash
-echo '++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.' > hello.bf
-cargo run hello.bf
+$ cargo run helloworld.bf
+Hello World!
 ```
 
 ## Brainfuck Commands

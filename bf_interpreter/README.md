@@ -1,7 +1,5 @@
 # Brainfuck Interpreter
 
-A simple Brainfuck interpreter written in Rust.
-
 ## Usage
 
 ```bash
@@ -10,15 +8,8 @@ cargo run <brainfuck_file>
 
 ## Example
 
-Create a file `hello.bf` with the classic "Hello, World!" program:
-
-```
-++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
-```
-
-Run it:
-
 ```bash
+echo '++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.' > hello.bf
 cargo run hello.bf
 ```
 
@@ -33,10 +24,3 @@ cargo run hello.bf
 - `[` - Jump forward if byte at data pointer is zero
 - `]` - Jump backward if byte at data pointer is nonzero
 - `$` - Debug: print first 10 memory cells
-
-## Features
-
-- 30,000 byte memory tape
-- Standard Brainfuck command set
-- Debug output option
-- Command-line argument parsing with clap
